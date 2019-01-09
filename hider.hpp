@@ -1,6 +1,4 @@
-#ifndef PIMPL_SAMPLE_IMPLEMENTATIONHIDINGCLASS_HPP
-#define PIMPL_SAMPLE_IMPLEMENTATIONHIDINGCLASS_HPP
-
+#pragma once
 #include <memory>
 
 class hider
@@ -9,10 +7,7 @@ public:
     hider();
     ~hider();
     void solution();
-
 private:
-    class hidden;
+    struct hidden;
     std::unique_ptr<hidden> pHidden;
 };
-
-#endif //PIMPL_SAMPLE_IMPLEMENTATIONHIDINGCLASS_HPP
