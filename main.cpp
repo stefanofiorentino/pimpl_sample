@@ -1,4 +1,3 @@
-#include <iostream>
 #include "hider.hpp"
 
 int main()

@@ -1,18 +1,11 @@
 #include "hider.hpp"
 
-class hider::hidden
+struct hider::hidden
 {
-public:
-    void custom_solution()
-    {
-        std::puts(__PRETTY_FUNCTION__);
-    }
+    void custom_solution() { std::puts(__PRETTY_FUNCTION__); }
 };
 
-hider::hider() :
-        pHidden{new hidden{}}
-{}
-
+hider::hider() : pHidden{ new hidden{ } } { }
 hider::~hider() = default;
 
 void hider::solution()
