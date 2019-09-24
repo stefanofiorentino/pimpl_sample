@@ -1,8 +1,8 @@
-#include "hider.hpp"
+#include "widget.hpp"
 
 int main()
 {
-    hider h;
-    h.solution();
+    widget w(3);
+    w.draw();
     return 0;
 }
